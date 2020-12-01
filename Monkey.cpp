@@ -74,7 +74,7 @@ double Highest(double monkeys[ROW_MONKEY][COL_DAY]) {
 
 	for (int row = 0; row < ROW_MONKEY; row++) {
 		for (int col = 0; col < COL_DAY; col++) {
-			if (monkeys[row][col] < highest) {
+			if (monkeys[row][col] > highest) {
 				highest = monkeys[row][col];
 			}
 		}
