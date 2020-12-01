@@ -1,6 +1,6 @@
 // William Coughlin
 // Monkey Business
-// Program will keep track of the amount of pounds 3 monkeys eat a local zoo each day during the week, and report the average, lowest, and greatest amount of food eaten during the week.
+// Program will keep track of the amount of pounds 3 monkeys eat at a local zoo each day during the week, and report the average, lowest, and greatest amount of food eaten during the week.
 
 #include <iostream>
 
@@ -61,7 +61,7 @@ double Lowest(double monkeys[ROW_MONKEY][COL_DAY]) {
 	
 	for (int row = 0; row < ROW_MONKEY; row++) {
 		for (int col = 0; col < COL_DAY; col++) {
-			if (monkeys[row][col] < lowest) {
+			if (monkeys[row][col] < lowest && monkeys[row][col] >= 0) {
 				lowest = monkeys[row][col];
 			}
 		}
